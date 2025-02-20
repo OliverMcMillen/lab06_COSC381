@@ -1,0 +1,9 @@
+Instructor_ID	Instructor_Name	Course_ID	Course_Name
+101	            Dr. Smith	CS101	        Intro to CS
+102	            Dr. Johnson	CS102	        Data Structures
+103	            Prof. Lee	CS201	        Algorithms
+104	            Dr. Davis	CS302	        Software Engineering Solutions
+101	            Dr. Smith	CS111	        Java Programming
+102	            Dr. Johnson	CS202	        Big Data
+103	            Prof. Lee	CS301	        Advanced Algorithms
+104	            Dr. Davis	CS402	        Software Engineering Projects
