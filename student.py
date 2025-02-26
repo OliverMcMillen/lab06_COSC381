@@ -17,4 +17,10 @@ with open("Student_List.csv", mode ="r", newline = "") as file:
 
 
 #for x in students_list:
- #  print("\n", x)
+   #print("\n", x)
+
+with open("Student_List.csv", 'r') as f:
+  Test = [line.strip() for line in f]
+    
+#for x in Test:
+  #print(x)

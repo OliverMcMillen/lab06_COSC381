@@ -1,27 +1,30 @@
 import fileinput
 import csv
 import student
-print('Hello World')
+class instructors:
 
-for line in fileinput.input(files =('instructors.txt')):
-    print(line)
+    def __init__(self, instructor_ID, name, course_ID, course_Name):
+        self.instructor_ID = instructor_ID
+        self.name = name
+        self.course_ID = course_ID
+        self.course_Name = course_Name
 
 instructors_list = []
 
-with open("Instructors.txt", mode="r", newline="", encoding="utf-8") as txt_file:
-    reader = csv.DictReader(txt_file, delimiter="\t")  # Set delimiter to tab
+
+with open("Instructors.txt", 'r') as f:
+    test = f.read()
     
-    for row in reader:
-        instructors_list.append({
-            "Instructor_ID": row["Instructor_ID"],
-            "Instructor_Name": row["Instructor_Name"],
-            "Course_ID": row["Course_ID"],
-            "Course_Name": row["Course_Name"]
-        })
-
-
-#for x in instructors_list:
- #   print("\n", x )
+for x in test.split("\n"):
+    if x.strip():
+        instructor = instructors(*x.strip().split())
+        instructors_list.append(instructor)
+        
+for instructor in instructors_list:
+    print(instructor.course_Name)
+    print(instructor.course_ID)
+    print(instructor.instructor_ID)
+    print(instructor.name)
 
     
         
