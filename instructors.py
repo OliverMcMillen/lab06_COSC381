@@ -23,12 +23,10 @@ with open("instructors.txt", 'r') as f:
                 instructor = Instructor(instructor_ID, name, course_ID, course_Name)
                 instructors_list.append(instructor)
 
-print("name: " + instructor.name)
 
 def get_instructor_by_id(instructor_ID):
     for instructor in instructors_list:
-        if instructor.instructor_ID == instructor_ID:
-            return instructor
+        return [instructor for instructor in instructors_list if instructor.instructor_ID == instructor_ID]
     return None
 
 # For debugging purposes.
