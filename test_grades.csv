@@ -1,2 +1,2 @@
-course_ID,student_ID,grade
-CS101,s001,A
+course_ID,student_ID,grade,timestamp
+CS101,s001,B,2025-03-03 23:26:02
