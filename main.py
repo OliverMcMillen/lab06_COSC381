@@ -1,4 +1,4 @@
-import instructor
+import instructors
 import student
 import gradebook
 
