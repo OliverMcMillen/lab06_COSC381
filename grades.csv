@@ -1,4 +1,2 @@
-course_ID,student_ID,grade
-Smith,50191,A
-CS201,50191,B+
-CS402,50191,B+
+course_ID,student_ID,grade,timestamp
+CS301,50191,A-,2025-02-03 23:04:25
