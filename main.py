@@ -5,7 +5,7 @@ import gradebook
 def main():
     print("Welcome to the Gradebook System")
     instructor_id = input("Enter your instructor ID: ").strip()
-    inst = instructor.get_instructor_by_id(instructor_id)
+    inst = instructors.get_instructor_by_id(instructor_id)
     if not inst:
         print("Instructor not found. Please check your ID.")
         return

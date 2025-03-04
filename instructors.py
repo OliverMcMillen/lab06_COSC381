@@ -18,10 +18,12 @@ with open("instructors.txt", 'r') as f:
             parts = line.strip().split()
             if len(parts) >= 4:
                 # If course name has spaces, join them:
-                instructor_ID, name, course_ID = parts[0], parts[1], parts[2]
-                course_Name = " ".join(parts[3:])
+                instructor_ID, name, course_ID = parts[0], parts[1]+" "+parts[2], parts[3]
+                course_Name = " ".join(parts[4:])
                 instructor = Instructor(instructor_ID, name, course_ID, course_Name)
                 instructors_list.append(instructor)
+
+print("name: " + instructor.name)
 
 def get_instructor_by_id(instructor_ID):
     for instructor in instructors_list:
